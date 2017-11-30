@@ -9,11 +9,6 @@ repositories {
     mavenCentral()
 }
 
-dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-}
-
-
 buildscript {
     repositories {
         mavenCentral()
@@ -34,6 +29,6 @@ dependencies {
     // JUnit Jupiter API and TestEngine implementation
     compile("org.junit.jupiter:junit-jupiter-api:${junitJupiterVersion}")
     testRuntime("org.junit.jupiter:junit-jupiter-engine:${junitJupiterVersion}")
-
+    testCompile group: 'org.assertj', name: 'assertj-core', version: '3.8.0'
     compile('org.mockito:mockito-core:2.+')
 }

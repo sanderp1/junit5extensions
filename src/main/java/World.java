@@ -1,7 +1,7 @@
 public class World {
 
     public String sayWhat() {
-        return "World";
+        return null;
     }
 
 }
